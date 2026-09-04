@@ -1,0 +1,3432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A romantic birthday surprise made with love for Anusha ❤️"
+    >
+
+    <title>Happy Birthday Anusha ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+            --pink: #ff4f9a;
+            --rose: #ff7cae;
+            --purple: #9b5de5;
+            --deep-purple: #35124f;
+            --dark: #100616;
+            --white: #fff7fc;
+            --muted: #d9bfd4;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(255, 79, 154, 0.18),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 80% 10%,
+                    rgba(155, 93, 229, 0.18),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #100616,
+                    #210c2d,
+                    #130718
+                );
+
+            color: var(--white);
+            font-family: "Poppins", sans-serif;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           BACKGROUND
+        ===================================================== */
+
+        #floating-hearts,
+        #stars {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.45;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        .floating-heart {
+            position: absolute;
+            bottom: -50px;
+            font-size: 18px;
+            opacity: 0;
+            animation: floatHeart linear forwards;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 0.8;
+                transform: scale(1.3);
+            }
+        }
+
+        @keyframes floatHeart {
+
+            0% {
+                opacity: 0;
+                transform:
+                    translateY(0)
+                    rotate(0deg)
+                    scale(0.6);
+            }
+
+            10% {
+                opacity: 0.75;
+            }
+
+            100% {
+                opacity: 0;
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg)
+                    scale(1.3);
+            }
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 14px 5%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 12px 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(25, 8, 32, 0.62);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
+            border-radius: 50px;
+            box-shadow:
+                0 10px 40px rgba(0, 0, 0, 0.25),
+                inset 0 1px rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #f8dce9;
+            text-decoration: none;
+            font-size: 0.78rem;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: white;
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           SECTIONS
+        ===================================================== */
+
+        section {
+            position: relative;
+            z-index: 2;
+
+            min-height: 100svh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 120px 5% 80px;
+
+            overflow: hidden;
+        }
+
+        .section-content {
+            width: min(1100px, 100%);
+            margin: auto;
+            text-align: center;
+        }
+
+        .section-label {
+            color: #ffafd0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            line-height: 0.95;
+            margin-bottom: 25px;
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .romantic-btn {
+            position: relative;
+
+            border: 0;
+            padding: 15px 28px;
+
+            border-radius: 999px;
+
+            color: white;
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f9a,
+                    #9b5de5
+                );
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+            box-shadow:
+                0 12px 35px rgba(255, 79, 154, 0.28);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .romantic-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+
+            box-shadow:
+                0 18px 45px rgba(255, 79, 154, 0.4);
+        }
+
+        .romantic-btn:active {
+            transform: scale(0.97);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero-section {
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(255, 79, 154, 0.14),
+                    transparent 40%
+                );
+        }
+
+        .hero-content {
+            width: min(900px, 100%);
+        }
+
+        .hero-content::before {
+            content: "";
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 79, 154, 0.13),
+                    transparent 70%
+                );
+
+            filter: blur(10px);
+
+            pointer-events: none;
+        }
+
+        .small-text {
+            color: #ffafd0;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h1 {
+            position: relative;
+            font-size: clamp(4rem, 11vw, 9rem);
+            line-height: 0.8;
+            font-weight: 700;
+            margin-bottom: 35px;
+
+            text-shadow:
+                0 0 30px rgba(255, 79, 154, 0.2);
+        }
+
+        .hero-content h1 span {
+            display: block;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff6fae,
+                    #ffd1e4,
+                    #b779ff
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+            animation: nameGlow 3s infinite ease-in-out;
+        }
+
+        @keyframes nameGlow {
+
+            0%,
+            100% {
+                filter: brightness(1);
+            }
+
+            50% {
+                filter: brightness(1.3);
+            }
+        }
+
+        .hero-message {
+            max-width: 650px;
+            margin: auto;
+
+            color: var(--muted);
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            line-height: 1.8;
+        }
+
+        .birthday-date {
+            margin: 22px 0 30px;
+
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2rem;
+            color: #ffd0e4;
+        }
+
+        #start-btn {
+            border: none;
+
+            padding: 16px 35px;
+            border-radius: 999px;
+
+            color: white;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f9a,
+                    #b45cff
+                );
+
+            box-shadow:
+                0 15px 45px rgba(255, 79, 154, 0.35);
+
+            transition: 0.3s ease;
+        }
+
+        #start-btn:hover {
+            transform: translateY(-4px) scale(1.04);
+        }
+
+        .scroll-indicator {
+            margin-top: 50px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            color: #cdaabd;
+
+            font-size: 0.75rem;
+
+            animation: scrollBounce 2s infinite;
+        }
+
+        @keyframes scrollBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(8px);
+            }
+        }
+
+
+        /* =====================================================
+           INTRO
+        ===================================================== */
+
+        .story-section {
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(255, 79, 154, 0.05),
+                    transparent
+                );
+        }
+
+        .story-section .section-content {
+            max-width: 800px;
+        }
+
+        .story-section p:not(.section-label) {
+            max-width: 700px;
+            margin: 0 auto 20px;
+
+            color: var(--muted);
+            line-height: 2;
+            font-size: 1.05rem;
+        }
+
+        #continue-btn {
+            margin-top: 15px;
+            padding: 14px 26px;
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+
+            color: white;
+            background: rgba(255, 255, 255, 0.07);
+
+            cursor: pointer;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.3s ease;
+        }
+
+        #continue-btn:hover {
+            background: rgba(255, 79, 154, 0.2);
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           QUESTIONS
+        ===================================================== */
+
+        .questions-section {
+            background:
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(155, 93, 229, 0.08),
+                    transparent 45%
+                );
+        }
+
+        .question-counter {
+            margin: 25px auto 10px;
+
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+            color: #f5b9d4;
+
+            font-size: 0.85rem;
+        }
+
+        .progress-container {
+            width: min(400px, 90%);
+            height: 5px;
+
+            margin: 0 auto 35px;
+
+            border-radius: 20px;
+
+            background: rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 16.66%;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff4f9a,
+                    #b45cff
+                );
+
+            transition: width 0.5s ease;
+        }
+
+        .question-card {
+            width: min(650px, 100%);
+            min-height: 330px;
+
+            margin: auto;
+            padding: 50px 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.13);
+
+            border-radius: 35px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.08),
+                    rgba(255, 255, 255, 0.025)
+                );
+
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+
+            box-shadow:
+                0 25px 80px rgba(0, 0, 0, 0.25),
+                inset 0 1px rgba(255, 255, 255, 0.08);
+
+            transition: 0.5s ease;
+        }
+
+        .question-heart {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            15% {
+                transform: scale(1.18);
+            }
+
+            30% {
+                transform: scale(1);
+            }
+
+            45% {
+                transform: scale(1.12);
+            }
+        }
+
+        .question-card h3 {
+            max-width: 550px;
+
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            line-height: 1;
+
+            margin-bottom: 15px;
+        }
+
+        .question-card p {
+            color: #cdaabd;
+            margin-bottom: 30px;
+        }
+
+        .answer-area {
+            position: relative;
+
+            width: min(400px, 100%);
+            height: 80px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .answer-btn {
+            width: 130px;
+            padding: 14px 20px;
+
+            border-radius: 999px;
+
+            border: none;
+
+            font-weight: 600;
+            cursor: pointer;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        #yes-btn {
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f9a,
+                    #c45cff
+                );
+
+            box-shadow:
+                0 10px 30px rgba(255, 79, 154, 0.25);
+        }
+
+        #yes-btn:hover {
+            transform: scale(1.06);
+        }
+
+        #no-btn {
+            position: absolute;
+
+            left: calc(50% + 10px);
+            top: 25px;
+
+            color: #ffd8e8;
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 1px solid rgba(255, 255, 255, 0.13);
+        }
+
+
+        /* =====================================================
+           MEMORY GALLERY
+        ===================================================== */
+
+        .memories-section {
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(255, 79, 154, 0.06),
+                    transparent 50%
+                );
+        }
+
+        .memories-section > .section-content {
+            max-width: 1150px;
+        }
+
+        .memories-section > .section-content > p:not(.section-label) {
+            color: var(--muted);
+            margin-bottom: 45px;
+        }
+
+        .memory-gallery {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 18px;
+        }
+
+        .memory-card {
+            position: relative;
+
+            aspect-ratio: 3 / 4;
+
+            overflow: hidden;
+
+            border-radius: 25px;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            background: #211027;
+
+            box-shadow:
+                0 20px 45px rgba(0, 0, 0, 0.25);
+
+            cursor: pointer;
+
+            transition:
+                transform 0.5s ease,
+                box-shadow 0.5s ease;
+        }
+
+        .memory-card:hover {
+            transform:
+                translateY(-10px)
+                rotate(1deg);
+
+            box-shadow:
+                0 30px 60px rgba(255, 79, 154, 0.18);
+        }
+
+        .memory-card img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.7s ease,
+                filter 0.7s ease;
+        }
+
+        .memory-card:hover img {
+            transform: scale(1.08);
+            filter: brightness(1.08);
+        }
+
+        .memory-card::after {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    transparent 50%,
+                    rgba(10, 3, 14, 0.85)
+                );
+        }
+
+        .memory-card span {
+            position: absolute;
+
+            left: 18px;
+            bottom: 18px;
+
+            z-index: 2;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           CAROUSEL
+        ===================================================== */
+
+        .carousel-section {
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(155, 93, 229, 0.07),
+                    transparent
+                );
+        }
+
+        .carousel-section > .section-content {
+            max-width: 900px;
+        }
+
+        .carousel-section > .section-content > p:not(.section-label) {
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+
+        .photo-carousel {
+            position: relative;
+
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .carousel-track {
+            position: relative;
+
+            width: min(650px, 78vw);
+            aspect-ratio: 4 / 5;
+
+            overflow: hidden;
+
+            border-radius: 35px;
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.4);
+
+            background: #211027;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            inset: 0;
+
+            opacity: 0;
+            transform: scale(1.05);
+
+            transition:
+                opacity 0.8s ease,
+                transform 1s ease;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+        .carousel-btn {
+            width: 50px;
+            height: 50px;
+
+            flex-shrink: 0;
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+
+            color: white;
+            background: rgba(255, 255, 255, 0.08);
+
+            backdrop-filter: blur(12px);
+
+            cursor: pointer;
+
+            font-size: 1.2rem;
+
+            transition: 0.3s ease;
+
+            z-index: 5;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(255, 79, 154, 0.25);
+            transform: scale(1.1);
+        }
+
+        .carousel-dots {
+            margin-top: 25px;
+
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+
+            padding: 0;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.25);
+
+            cursor: pointer;
+
+            transition: 0.3s ease;
+        }
+
+        .dot.active {
+            width: 25px;
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff4f9a,
+                    #b45cff
+                );
+        }
+
+
+        /* =====================================================
+           LETTER
+        ===================================================== */
+
+        .letter-section {
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(255, 79, 154, 0.08),
+                    transparent 50%
+                );
+        }
+
+        .letter-card {
+            width: min(800px, 100%);
+
+            margin: 30px auto;
+
+            padding: clamp(30px, 6vw, 60px);
+
+            text-align: left;
+
+            border-radius: 35px;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.08),
+                    rgba(255, 255, 255, 0.025)
+                );
+
+            backdrop-filter: blur(20px);
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.25);
+        }
+
+        #letter-text {
+            min-height: 260px;
+
+            color: #f2dce7;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+
+            line-height: 1.8;
+        }
+
+        .letter-signature {
+            margin-top: 30px;
+
+            color: #ffafd0;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 1.4rem;
+        }
+
+        #open-heart-btn {
+            padding: 15px 28px;
+
+            border: none;
+            border-radius: 999px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff4f9a,
+                    #a959ed
+                );
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+            box-shadow:
+                0 15px 40px rgba(255, 79, 154, 0.25);
+
+            transition: 0.3s ease;
+        }
+
+        #open-heart-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+        }
+
+
+        /* =====================================================
+           GIFT
+        ===================================================== */
+
+        .gift-section {
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(155, 93, 229, 0.1),
+                    transparent 50%
+                );
+        }
+
+        .gift-box {
+            width: min(550px, 100%);
+
+            margin: 40px auto 0;
+
+            padding: 50px 30px;
+
+            border-radius: 35px;
+
+            border: 1px solid rgba(255, 255, 255, 0.13);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.08),
+                    rgba(255, 255, 255, 0.025)
+                );
+
+            backdrop-filter: blur(20px);
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.25);
+
+            transition: 0.5s ease;
+        }
+
+        .gift-box.open {
+            transform: scale(1.03);
+        }
+
+        .gift-emoji {
+            font-size: 5rem;
+
+            margin-bottom: 20px;
+
+            animation:
+                giftFloat 2s infinite ease-in-out;
+        }
+
+        @keyframes giftFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-3deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(3deg);
+            }
+        }
+
+        .gift-box h3 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .gift-box p {
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+
+        /* =====================================================
+           FINALE
+        ===================================================== */
+
+        .finale-section {
+            min-height: 100svh;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(255, 79, 154, 0.15),
+                    transparent 45%
+                );
+        }
+
+        .finale-content {
+            max-width: 850px;
+        }
+
+        .finale-hearts {
+            font-size: 2rem;
+            letter-spacing: 10px;
+
+            margin-bottom: 20px;
+
+            animation: heartbeat 1.8s infinite;
+        }
+
+        .finale-content h2 span {
+            display: block;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff6fae,
+                    #ffd1e4,
+                    #b779ff
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .final-message {
+            max-width: 650px;
+
+            margin: auto;
+
+            color: var(--muted);
+
+            line-height: 2;
+
+            font-size: 1.05rem;
+        }
+
+
+        /* =====================================================
+           COUPLE
+        ===================================================== */
+
+        .couple-illustration {
+            position: relative;
+
+            width: 230px;
+            height: 180px;
+
+            margin: 40px auto;
+
+            display: flex;
+
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .boy,
+        .girl {
+            font-size: 5rem;
+
+            filter:
+                drop-shadow(
+                    0 15px 25px rgba(0, 0, 0, 0.3)
+                );
+
+            animation:
+                coupleFloat 3s infinite ease-in-out;
+        }
+
+        .girl {
+            animation-delay: 0.3s;
+        }
+
+        .heart-between {
+            position: absolute;
+
+            top: 15px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            font-size: 2rem;
+
+            animation:
+                heartbeat 1.3s infinite;
+        }
+
+        @keyframes coupleFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .forever-text {
+            max-width: 600px;
+
+            margin: auto;
+
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+
+            color: #f8dce9;
+        }
+
+        .big-love {
+            margin-top: 25px;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: clamp(3rem, 8vw, 6rem);
+
+            font-weight: 700;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff4f9a,
+                    #ffd1e4,
+                    #b779ff
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .birthday-ending {
+            color: #ffafd0;
+
+            margin: 10px auto 30px;
+
+            font-size: 1rem;
+        }
+
+        #restart-btn {
+            padding: 13px 25px;
+
+            border-radius: 999px;
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            color: white;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            cursor: pointer;
+
+            transition: 0.3s ease;
+        }
+
+        #restart-btn:hover {
+            background: rgba(255, 79, 154, 0.18);
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           REVEAL ANIMATION
+        ===================================================== */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+
+            transition:
+                opacity 0.9s ease,
+                transform 0.9s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =====================================================
+           BURST PARTICLES
+        ===================================================== */
+
+        .burst-heart {
+            position: fixed;
+
+            left: 50%;
+            top: 50%;
+
+            z-index: 9999;
+
+            pointer-events: none;
+
+            font-size: 20px;
+
+            animation:
+                burst 1s ease-out forwards;
+        }
+
+        @keyframes burst {
+
+            from {
+                opacity: 1;
+                transform:
+                    translate(-50%, -50%)
+                    scale(0.5);
+            }
+
+            to {
+                opacity: 0;
+
+                transform:
+                    translate(
+                        calc(-50% + var(--x)),
+                        calc(-50% + var(--y))
+                    )
+                    scale(1.4)
+                    rotate(30deg);
+            }
+        }
+
+
+        /* =====================================================
+           TOAST
+        ===================================================== */
+
+        .birthday-toast {
+            position: fixed;
+
+            left: 50%;
+            bottom: 25px;
+
+            z-index: 10000;
+
+            transform:
+                translate(-50%, 120px);
+
+            padding: 13px 22px;
+
+            border-radius: 999px;
+
+            color: white;
+
+            background:
+                rgba(30, 10, 40, 0.85);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.15);
+
+            backdrop-filter: blur(15px);
+
+            transition: 0.5s ease;
+
+            white-space: nowrap;
+        }
+
+        .birthday-toast.show {
+            transform: translate(-50%, 0);
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .memory-gallery {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+            .carousel-track {
+                width: min(600px, 78vw);
+            }
+
+            .carousel-btn {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+
+        @media (max-width: 550px) {
+
+            header {
+                padding: 10px 15px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding:
+                    105px 18px
+                    65px;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: clamp(4rem, 20vw, 6rem);
+            }
+
+            .hero-message {
+                line-height: 1.7;
+            }
+
+            .question-card {
+                min-height: 360px;
+                padding: 35px 18px;
+            }
+
+            .answer-area {
+                width: 100%;
+            }
+
+            .answer-btn {
+                width: 115px;
+            }
+
+            .memory-gallery {
+                gap: 10px;
+            }
+
+            .memory-card {
+                border-radius: 18px;
+            }
+
+            .memory-card span {
+                left: 10px;
+                bottom: 10px;
+                font-size: 1rem;
+            }
+
+            .photo-carousel {
+                gap: 7px;
+            }
+
+            .carousel-track {
+                width: calc(100vw - 110px);
+                border-radius: 22px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+
+            .letter-card {
+                padding: 28px 22px;
+                border-radius: 25px;
+            }
+
+            #letter-text {
+                font-size: 1.2rem;
+            }
+
+            .gift-box {
+                padding: 40px 20px;
+            }
+
+            .couple-illustration {
+                transform: scale(0.85);
+            }
+
+            .birthday-toast {
+                max-width: 90%;
+                white-space: normal;
+                text-align: center;
+            }
+        }
+
+
+        @media (max-width: 370px) {
+
+            .answer-btn {
+                width: 105px;
+                padding: 12px;
+            }
+
+            .carousel-track {
+                width: calc(100vw - 100px);
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div id="stars"></div>
+    <div id="floating-hearts"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                A Little Story For Anusha ❤️
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#questions">
+                    Questions
+                </a>
+
+                <a href="#memories">
+                    Memories
+                </a>
+
+                <a href="#carousel">
+                    Moments
+                </a>
+
+                <a href="#letter">
+                    Letter
+                </a>
+
+                <a href="#finale">
+                    Forever
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section id="home" class="hero-section">
+
+            <div class="hero-content reveal">
+
+                <p class="small-text">
+                    ✨ 29 September — Your Special Day ✨
+                </p>
+
+                <h1>
+                    Happy Birthday
+                    <span>Anusha</span>
+                </h1>
+
+                <p class="hero-message">
+
+                    Today isn't just your birthday...
+
+                    It's the day the world was blessed
+                    with someone incredibly special. ❤️
+
+                </p>
+
+                <p class="birthday-date">
+                    🎂 29 September 🎂
+                </p>
+
+                <button
+                    id="start-btn"
+                    class="romantic-btn"
+                >
+                    Begin Your Surprise 💖
+                </button>
+
+                <div class="scroll-indicator">
+
+                    <span>
+                        A little surprise awaits...
+                    </span>
+
+                    <span>
+                        ↓
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section id="intro" class="story-section">
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    💕 For The Birthday Girl
+                </p>
+
+                <h2>
+                    Today is all about you...
+                </h2>
+
+                <p>
+
+                    Anusha, if I could give you one thing
+                    on your birthday, I would give you
+                    the ability to see yourself through
+                    my eyes.
+
+                </p>
+
+                <p>
+
+                    Then you would finally understand
+                    how beautiful you are to me,
+                    how much your smile means to me,
+                    and how lucky I feel to have you
+                    in my life. ❤️
+
+                </p>
+
+                <p>
+
+                    You are not just someone I love.
+
+                    You are one of the most beautiful
+                    chapters of my life.
+
+                </p>
+
+                <button
+                    id="continue-btn"
+                    class="romantic-btn"
+                >
+                    Continue My Surprise ✨
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUESTIONS
+        ================================================== -->
+
+        <section
+            id="questions"
+            class="questions-section"
+        >
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    💌 Birthday Questions
+                </p>
+
+                <h2>
+                    Answer Honestly...
+                </h2>
+
+                <p style="color:#d9bfd4;">
+                    I have a few questions for my
+                    beautiful birthday girl. 🥰
+                </p>
+
+
+                <div class="question-counter">
+
+                    <span id="question-number">
+                        Question 1
+                    </span>
+
+                    <span>
+                        of 6
+                    </span>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <div
+                        id="progress-bar"
+                        class="progress-bar"
+                    ></div>
+
+                </div>
+
+
+                <div class="question-card">
+
+                    <div class="question-heart">
+                        💗
+                    </div>
+
+                    <h3 id="question-text">
+                        Do you believe in love
+                        at first sight? 💫
+                    </h3>
+
+                    <p id="question-subtext">
+                        Be honest, birthday girl... 😏
+                    </p>
+
+
+                    <div class="answer-area">
+
+                        <button
+                            id="yes-btn"
+                            class="answer-btn"
+                        >
+                            Yes ❤️
+                        </button>
+
+                        <button
+                            id="no-btn"
+                            class="answer-btn"
+                        >
+                            No 😏
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MEMORY GALLERY
+        ================================================== -->
+
+        <section
+            id="memories"
+            class="memories-section"
+        >
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    📸 Our Beautiful Memories
+                </p>
+
+                <h2>
+                    Every Picture Has A Story...
+                </h2>
+
+                <p>
+
+                    And somehow, every picture becomes
+                    more beautiful when you're in it. ❤️
+
+                </p>
+
+
+                <div class="memory-gallery">
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 1.jpeg"
+                            alt="Anusha Memory 1"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            My Beautiful Girl ❤️
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 2.jpeg"
+                            alt="Anusha Memory 2"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            That Smile 🥰
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 3.jpeg"
+                            alt="Anusha Memory 3"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            My Favorite Person 💕
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 4.jpeg"
+                            alt="Anusha Memory 4"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            My Happy Place 🌹
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 5.jpeg"
+                            alt="Anusha Memory 5"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Simply Gorgeous ✨
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 6.jpeg"
+                            alt="Anusha Memory 6"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            A Moment To Remember 💗
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 7.jpeg"
+                            alt="Anusha Memory 7"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Forever Special 🌙
+                        </span>
+
+                    </div>
+
+
+                    <div class="memory-card">
+
+                        <img
+                            src="./media/gallery/gallery 8.jpeg"
+                            alt="Anusha Memory 8"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            My Favorite Chapter 💍
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CAROUSEL
+        ================================================== -->
+
+        <section
+            id="carousel"
+            class="carousel-section"
+        >
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    🌹 More Moments Of You
+                </p>
+
+                <h2>
+                    I Could Look At You Forever...
+                </h2>
+
+                <p>
+
+                    Eight more little moments
+                    that make my heart smile. ❤️
+
+                </p>
+
+
+                <div class="photo-carousel">
+
+                    <button
+                        id="prev-btn"
+                        class="carousel-btn"
+                        aria-label="Previous photo"
+                    >
+                        ❮
+                    </button>
+
+
+                    <div
+                        class="carousel-track"
+                        id="carousel-track"
+                    >
+
+                        <div
+                            class="carousel-slide active"
+                        >
+                            <img
+                                src="./media/crousel/crousel image 1.jpeg"
+                                alt="Anusha Carousel 1"
+                                loading="lazy"
+                            >
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 2.jpeg"
+                                alt="Anusha Carousel 2"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 3.jpeg"
+                                alt="Anusha Carousel 3"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 4.jpeg"
+                                alt="Anusha Carousel 4"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 5.jpeg"
+                                alt="Anusha Carousel 5"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 6.jpeg"
+                                alt="Anusha Carousel 6"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 7.jpeg"
+                                alt="Anusha Carousel 7"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <div class="carousel-slide">
+
+                            <img
+                                src="./media/crousel/crousel image 9.jpeg"
+                                alt="Anusha Carousel 8"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        id="next-btn"
+                        class="carousel-btn"
+                        aria-label="Next photo"
+                    >
+                        ❯
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="carousel-dots"
+                    id="carousel-dots"
+                >
+
+                    <button
+                        class="dot active"
+                        data-index="0"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="1"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="2"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="3"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="4"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="5"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="6"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="7"
+                    ></button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LETTER
+        ================================================== -->
+
+        <section
+            id="letter"
+            class="letter-section"
+        >
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    💌 From My Heart To Yours
+                </p>
+
+                <h2>
+                    A Birthday Letter For You
+                </h2>
+
+
+                <div class="letter-card">
+
+                    <p id="letter-text"></p>
+
+                    <div class="letter-signature">
+
+                        Forever Yours,<br>
+
+                        The One Who Will
+                        Always Cheer For You ❤️
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="open-heart-btn"
+                    class="romantic-btn"
+                >
+                    Open My Heart ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GIFT
+        ================================================== -->
+
+        <section
+            id="gift"
+            class="gift-section"
+        >
+
+            <div class="section-content reveal">
+
+                <p class="section-label">
+                    🎁 One Last Surprise
+                </p>
+
+                <h2>
+                    I Have Something For You...
+                </h2>
+
+
+                <div class="gift-box">
+
+                    <div
+                        class="gift-emoji"
+                        id="gift-emoji"
+                    >
+                        🎁
+                    </div>
+
+                    <h3 id="gift-title">
+                        A Little Gift From My Heart
+                    </h3>
+
+                    <p id="gift-message">
+
+                        Close your eyes for a second,
+                        make your birthday wish...
+
+                        then open your heart. 💗
+
+                    </p>
+
+                    <button
+                        id="gift-btn"
+                        class="romantic-btn"
+                    >
+                        Open Your Gift ✨
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINALE
+        ================================================== -->
+
+        <section
+            id="finale"
+            class="finale-section"
+        >
+
+            <div class="finale-content reveal">
+
+                <div class="finale-hearts">
+                    ❤️ 💕 💖
+                </div>
+
+                <p class="section-label">
+                    ✨ The Final Surprise
+                </p>
+
+                <h2>
+                    Happy Birthday,
+                    <span>Anusha</span>
+                </h2>
+
+
+                <p class="final-message">
+
+                    May your birthday be as beautiful
+                    as your smile.
+
+                    May every dream you carry in your heart
+                    find its way into reality.
+
+                    May life give you countless reasons
+                    to laugh, smile and feel loved.
+
+                    And whenever life gets difficult,
+                    I hope you always remember...
+
+                    there will always be someone
+                    cheering for you, believing in you,
+                    and loving you. 🥹❤️
+
+                </p>
+
+
+                <div class="couple-illustration">
+
+                    <div class="boy">
+                        🧑🏻
+                    </div>
+
+                    <div class="heart-between">
+                        ❤️
+                    </div>
+
+                    <div class="girl">
+                        👩🏻
+                    </div>
+
+                </div>
+
+
+                <h3 class="forever-text">
+
+                    You are my favorite chapter
+                    in this beautiful story.
+
+                    And I hope our story never ends. 📖❤️
+
+                </h3>
+
+
+                <p class="big-love">
+                    I Love You, Anusha ❤️
+                </p>
+
+
+                <p class="birthday-ending">
+
+                    Happy Birthday to the girl
+                    who makes my world brighter. 🎂🌹
+
+                </p>
+
+
+                <button
+                    id="restart-btn"
+                >
+                    Read Our Story Again 💕
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        id="toast"
+        class="birthday-toast"
+    ></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =====================================================
+           ELEMENTS
+        ===================================================== */
+
+        const startBtn =
+            document.getElementById("start-btn");
+
+        const continueBtn =
+            document.getElementById("continue-btn");
+
+        const yesBtn =
+            document.getElementById("yes-btn");
+
+        const noBtn =
+            document.getElementById("no-btn");
+
+        const questionText =
+            document.getElementById("question-text");
+
+        const questionSubtext =
+            document.getElementById("question-subtext");
+
+        const questionNumber =
+            document.getElementById("question-number");
+
+        const progressBar =
+            document.getElementById("progress-bar");
+
+        const openHeartBtn =
+            document.getElementById("open-heart-btn");
+
+        const restartBtn =
+            document.getElementById("restart-btn");
+
+        const giftBtn =
+            document.getElementById("gift-btn");
+
+        const giftBox =
+            document.querySelector(".gift-box");
+
+        const giftEmoji =
+            document.getElementById("gift-emoji");
+
+        const giftTitle =
+            document.getElementById("gift-title");
+
+        const giftMessage =
+            document.getElementById("gift-message");
+
+        const toast =
+            document.getElementById("toast");
+
+
+        /* =====================================================
+           QUESTIONS
+        ===================================================== */
+
+        const questions = [
+
+            {
+                text:
+                    "Do you believe in love at first sight? 💫",
+
+                sub:
+                    "Be honest, birthday girl... 😏"
+            },
+
+            {
+                text:
+                    "Will you keep smiling like this forever? 🥰",
+
+                sub:
+                    "Because your smile is my favorite thing."
+            },
+
+            {
+                text:
+                    "Will you always be there when I need you? 🥹",
+
+                sub:
+                    "Just like I'll always be there for you."
+            },
+
+            {
+                text:
+                    "Will you choose me even on difficult days? 🌙",
+
+                sub:
+                    "Because I would choose you again and again."
+            },
+
+            {
+                text:
+                    "Will you stand by my side through every chapter? 🤝",
+
+                sub:
+                    "The good days, bad days and crazy days."
+            },
+
+            {
+                text:
+                    "Will you make this beautiful story last forever? 💍",
+
+                sub:
+                    "I already know what my answer is. ❤️"
+            }
+
+        ];
+
+        let currentQuestion = 0;
+
+
+        /* =====================================================
+           SMOOTH NAVIGATION
+        ===================================================== */
+
+        function goTo(id) {
+
+            const section =
+                document.getElementById(id);
+
+            if (!section) return;
+
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+
+        /* =====================================================
+           QUESTION LOADING
+        ===================================================== */
+
+        function loadQuestion() {
+
+            const q =
+                questions[currentQuestion];
+
+            questionText.textContent =
+                q.text;
+
+            questionSubtext.textContent =
+                q.sub;
+
+            questionNumber.textContent =
+                `Question ${currentQuestion + 1}`;
+
+            const progress =
+                ((currentQuestion + 1) /
+                    questions.length) * 100;
+
+            progressBar.style.width =
+                `${progress}%`;
+
+            resetNoButton();
+
+        }
+
+
+        /* =====================================================
+           RESET NO BUTTON
+        ===================================================== */
+
+        function resetNoButton() {
+
+            noBtn.style.position =
+                "absolute";
+
+            noBtn.style.left =
+                "calc(50% + 10px)";
+
+            noBtn.style.top =
+                "25px";
+
+            noBtn.style.transform =
+                "none";
+
+            noBtn.textContent =
+                "No 😏";
+
+        }
+
+
+        /* =====================================================
+           MOVE NO BUTTON
+        ===================================================== */
+
+        function moveNoButton(event) {
+
+            if (event) {
+                event.preventDefault();
+            }
+
+            const area =
+                document.querySelector(
+                    ".answer-area"
+                );
+
+            const areaRect =
+                area.getBoundingClientRect();
+
+            const buttonRect =
+                noBtn.getBoundingClientRect();
+
+            const maxX =
+                Math.max(
+                    0,
+                    areaRect.width -
+                    buttonRect.width
+                );
+
+            const maxY =
+                Math.max(
+                    0,
+                    areaRect.height -
+                    buttonRect.height
+                );
+
+            const randomX =
+                Math.random() * maxX;
+
+            const randomY =
+                Math.random() * maxY;
+
+            noBtn.style.left =
+                `${randomX}px`;
+
+            noBtn.style.top =
+                `${randomY}px`;
+
+            noBtn.style.transform =
+                `rotate(${Math.random() * 12 - 6}deg)`;
+
+            createBurst(5);
+
+        }
+
+
+        noBtn.addEventListener(
+            "mouseenter",
+            moveNoButton
+        );
+
+        noBtn.addEventListener(
+            "pointerdown",
+            moveNoButton
+        );
+
+        noBtn.addEventListener(
+            "touchstart",
+            moveNoButton,
+            { passive: false }
+        );
+
+
+        /* =====================================================
+           YES BUTTON
+        ===================================================== */
+
+        yesBtn.addEventListener(
+            "click",
+            () => {
+
+                createBurst(22);
+
+                showToast(
+                    "I knew you'd say yes! ❤️"
+                );
+
+                currentQuestion++;
+
+                if (
+                    currentQuestion <
+                    questions.length
+                ) {
+
+                    setTimeout(() => {
+
+                        loadQuestion();
+
+                    }, 500);
+
+                } else {
+
+                    setTimeout(() => {
+
+                        goTo("memories");
+
+                    }, 700);
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           INTRO NAVIGATION
+        ===================================================== */
+
+        startBtn.addEventListener(
+            "click",
+            () => {
+
+                createBurst(25);
+
+                goTo("intro");
+
+            }
+        );
+
+
+        continueBtn.addEventListener(
+            "click",
+            () => {
+
+                goTo("questions");
+
+            }
+        );
+
+
+        /* =====================================================
+           LETTER
+        ===================================================== */
+
+        const letterText =
+        `My dearest Anusha,
+
+Today is your birthday, but honestly, I feel like I am the lucky one because I get to celebrate you.
+
+I don't know if words will ever be enough to explain what you mean to me.
+
+You have this beautiful way of making ordinary moments feel special.
+
+Your smile can change my entire mood. Your presence can make a normal day feel like a good day.
+
+On this special day, I don't just wish you a happy birthday.
+
+I wish you a life full of happiness, success, peace, beautiful memories and everything your heart deserves.
+
+I hope you always chase your dreams.
+
+I hope you never stop believing in yourself.
+
+And I hope you never forget how incredibly special you are.
+
+If I could make one birthday wish for myself, it would be simple...
+
+I would wish for many more birthdays where I get to see you smile.
+
+Happy Birthday, Anusha. 🎂❤️
+
+Keep smiling.
+Keep shining.
+And please always remember...
+
+You are loved more than you know. ❤️`;
+
+        let typingStarted = false;
+
+
+        function typeLetter() {
+
+            if (typingStarted) return;
+
+            typingStarted = true;
+
+            const element =
+                document.getElementById(
+                    "letter-text"
+                );
+
+            element.innerHTML = "";
+
+            let index = 0;
+
+            function type() {
+
+                if (index >= letterText.length) {
+                    return;
+                }
+
+                if (
+                    letterText[index] === "\n"
+                ) {
+
+                    element.innerHTML +=
+                        "<br>";
+
+                    index++;
+
+                } else {
+
+                    element.innerHTML +=
+                        letterText[index];
+
+                    index++;
+
+                }
+
+                setTimeout(type, 22);
+
+            }
+
+            type();
+
+        }
+
+
+        openHeartBtn.addEventListener(
+            "click",
+            () => {
+
+                typeLetter();
+
+                goTo("gift");
+
+                createBurst(30);
+
+            }
+        );
+
+
+        /* =====================================================
+           GIFT
+        ===================================================== */
+
+        let giftOpened = false;
+
+        giftBtn.addEventListener(
+            "click",
+            () => {
+
+                if (giftOpened) {
+
+                    goTo("finale");
+
+                    return;
+
+                }
+
+                giftOpened = true;
+
+                giftBox.classList.add("open");
+
+                giftEmoji.textContent =
+                    "💖";
+
+                giftTitle.textContent =
+                    "My Gift Is A Promise ❤️";
+
+                giftMessage.innerHTML =
+                    `
+                    I can't wrap my love in a box...
+
+                    but I can promise you that I'll always
+                    treasure the moments we create together.
+
+                    You deserve the world, Anusha.
+                    And I'll always try to give you
+                    a little more happiness every day. 🥹❤️
+                    `;
+
+                giftBtn.textContent =
+                    "See Your Final Surprise ✨";
+
+                createBurst(45);
+
+                showToast(
+                    "A little piece of my heart, just for you ❤️"
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           RESTART
+        ===================================================== */
+
+        restartBtn.addEventListener(
+            "click",
+            () => {
+
+                currentQuestion = 0;
+
+                typingStarted = false;
+
+                giftOpened = false;
+
+                giftEmoji.textContent =
+                    "🎁";
+
+                giftTitle.textContent =
+                    "A Little Gift From My Heart";
+
+                giftMessage.innerHTML =
+                    `
+                    Close your eyes for a second,
+                    make your birthday wish...
+
+                    then open your heart. 💗
+                    `;
+
+                giftBtn.textContent =
+                    "Open Your Gift ✨";
+
+                loadQuestion();
+
+                goTo("home");
+
+            }
+        );
+
+
+        /* =====================================================
+           CAROUSEL
+        ===================================================== */
+
+        const slides =
+            document.querySelectorAll(
+                ".carousel-slide"
+            );
+
+        const dots =
+            document.querySelectorAll(
+                ".dot"
+            );
+
+        const prevBtn =
+            document.getElementById(
+                "prev-btn"
+            );
+
+        const nextBtn =
+            document.getElementById(
+                "next-btn"
+            );
+
+        let currentSlide = 0;
+
+        let carouselTimer;
+
+
+        function showSlide(index) {
+
+            if (index < 0) {
+
+                index =
+                    slides.length - 1;
+
+            }
+
+            if (index >= slides.length) {
+
+                index = 0;
+
+            }
+
+            currentSlide = index;
+
+            slides.forEach(
+                (slide, i) => {
+
+                    slide.classList.toggle(
+                        "active",
+                        i === currentSlide
+                    );
+
+                }
+            );
+
+            dots.forEach(
+                (dot, i) => {
+
+                    dot.classList.toggle(
+                        "active",
+                        i === currentSlide
+                    );
+
+                }
+            );
+
+        }
+
+
+        function nextSlide() {
+
+            showSlide(
+                currentSlide + 1
+            );
+
+        }
+
+
+        function previousSlide() {
+
+            showSlide(
+                currentSlide - 1
+            );
+
+        }
+
+
+        nextBtn.addEventListener(
+            "click",
+            () => {
+
+                nextSlide();
+
+                restartCarousel();
+
+            }
+        );
+
+
+        prevBtn.addEventListener(
+            "click",
+            () => {
+
+                previousSlide();
+
+                restartCarousel();
+
+            }
+        );
+
+
+        dots.forEach(
+            (dot) => {
+
+                dot.addEventListener(
+                    "click",
+                    () => {
+
+                        showSlide(
+                            Number(
+                                dot.dataset.index
+                            )
+                        );
+
+                        restartCarousel();
+
+                    }
+                );
+
+            }
+        );
+
+
+        function startCarousel() {
+
+            carouselTimer =
+                setInterval(
+                    nextSlide,
+                    4000
+                );
+
+        }
+
+
+        function restartCarousel() {
+
+            clearInterval(
+                carouselTimer
+            );
+
+            startCarousel();
+
+        }
+
+
+        startCarousel();
+
+
+        /* =====================================================
+           TOUCH SWIPE
+        ===================================================== */
+
+        const carouselTrack =
+            document.getElementById(
+                "carousel-track"
+            );
+
+        let touchStartX = 0;
+
+        let touchEndX = 0;
+
+
+        carouselTrack.addEventListener(
+            "touchstart",
+            (event) => {
+
+                touchStartX =
+                    event.changedTouches[0].screenX;
+
+            },
+            { passive: true }
+        );
+
+
+        carouselTrack.addEventListener(
+            "touchend",
+            (event) => {
+
+                touchEndX =
+                    event.changedTouches[0].screenX;
+
+                handleSwipe();
+
+            },
+            { passive: true }
+        );
+
+
+        function handleSwipe() {
+
+            const distance =
+                touchEndX - touchStartX;
+
+            if (Math.abs(distance) < 50) {
+                return;
+            }
+
+            if (distance < 0) {
+
+                nextSlide();
+
+            } else {
+
+                previousSlide();
+
+            }
+
+            restartCarousel();
+
+        }
+
+
+        /* =====================================================
+           FLOATING HEARTS
+        ===================================================== */
+
+        const heartsContainer =
+            document.getElementById(
+                "floating-hearts"
+            );
+
+        const heartSymbols = [
+            "❤️",
+            "💕",
+            "💗",
+            "💖",
+            "💘",
+            "💝",
+            "🌹"
+        ];
+
+
+        function createFloatingHeart() {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className =
+                "floating-heart";
+
+            heart.textContent =
+                heartSymbols[
+                    Math.floor(
+                        Math.random() *
+                        heartSymbols.length
+                    )
+                ];
+
+            heart.style.left =
+                `${Math.random() * 100}%`;
+
+            heart.style.fontSize =
+                `${12 + Math.random() * 18}px`;
+
+            const duration =
+                7 + Math.random() * 7;
+
+            heart.style.animationDuration =
+                `${duration}s`;
+
+            heartsContainer.appendChild(
+                heart
+            );
+
+            setTimeout(
+                () => heart.remove(),
+                duration * 1000
+            );
+
+        }
+
+
+        setInterval(
+            createFloatingHeart,
+            750
+        );
+
+
+        /* =====================================================
+           STARS
+        ===================================================== */
+
+        const starsContainer =
+            document.getElementById(
+                "stars"
+            );
+
+
+        for (
+            let i = 0;
+            i < 90;
+            i++
+        ) {
+
+            const star =
+                document.createElement("div");
+
+            star.className =
+                "star";
+
+            star.style.left =
+                `${Math.random() * 100}%`;
+
+            star.style.top =
+                `${Math.random() * 100}%`;
+
+            star.style.animationDelay =
+                `${Math.random() * 3}s`;
+
+            star.style.animationDuration =
+                `${2 + Math.random() * 4}s`;
+
+            starsContainer.appendChild(
+                star
+            );
+
+        }
+
+
+        /* =====================================================
+           HEART BURST
+        ===================================================== */
+
+        function createBurst(
+            amount = 20
+        ) {
+
+            const symbols = [
+                "❤️",
+                "💕",
+                "💖",
+                "✨",
+                "🌹"
+            ];
+
+            for (
+                let i = 0;
+                i < amount;
+                i++
+            ) {
+
+                const heart =
+                    document.createElement(
+                        "div"
+                    );
+
+                heart.className =
+                    "burst-heart";
+
+                heart.textContent =
+                    symbols[
+                        Math.floor(
+                            Math.random() *
+                            symbols.length
+                        )
+                    ];
+
+                const angle =
+                    Math.random() *
+                    Math.PI *
+                    2;
+
+                const distance =
+                    80 +
+                    Math.random() *
+                    220;
+
+                heart.style.setProperty(
+                    "--x",
+                    `${Math.cos(angle) * distance}px`
+                );
+
+                heart.style.setProperty(
+                    "--y",
+                    `${Math.sin(angle) * distance}px`
+                );
+
+                document.body.appendChild(
+                    heart
+                );
+
+                setTimeout(
+                    () => heart.remove(),
+                    1100
+                );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           TOAST
+        ===================================================== */
+
+        let toastTimer;
+
+
+        function showToast(message) {
+
+            toast.textContent =
+                message;
+
+            toast.classList.add(
+                "show"
+            );
+
+            clearTimeout(
+                toastTimer
+            );
+
+            toastTimer =
+                setTimeout(
+                    () => {
+
+                        toast.classList.remove(
+                            "show"
+                        );
+
+                    },
+                    2500
+                );
+
+        }
+
+
+        /* =====================================================
+           SCROLL REVEAL
+        ===================================================== */
+
+        const revealElements =
+            document.querySelectorAll(
+                ".reveal"
+            );
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(
+                        (entry) => {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        revealElements.forEach(
+            (element) => {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           MEMORY PHOTO CLICK
+        ===================================================== */
+
+        const memoryCards =
+            document.querySelectorAll(
+                ".memory-card"
+            );
+
+
+        memoryCards.forEach(
+            (card) => {
+
+                card.addEventListener(
+                    "click",
+                    () => {
+
+                        createBurst(12);
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           INITIALIZE
+        ===================================================== */
+
+        loadQuestion();
+
+        setTimeout(
+            () => {
+
+                document
+                    .querySelector(
+                        "#home .reveal"
+                    )
+                    ?.classList.add(
+                        "visible"
+                    );
+
+            },
+            300
+        );
+
+    </script>
+
+</body>
+</html>
